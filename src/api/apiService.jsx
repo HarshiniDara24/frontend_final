@@ -91,7 +91,7 @@ marked.setOptions({
 });
 
 // Use Render backend base URL
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://root-cause-identification.onrender.com";
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://root-cause-identification.onrender.com/defects/load";
 
 export const fetchBugbusterResponse = async (issue) => {
   try {
