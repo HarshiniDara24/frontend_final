@@ -94,7 +94,7 @@ marked.setOptions({
 export const fetchBugbusterResponse = async (issue) => {
   try {
     const response = await apiClient.post(
-      "https://root-cause-identification.onrender.com/defects/response",
+      "http://localhost:8000/defects/response",
       { prompt: issue }
     );
    
@@ -118,7 +118,7 @@ export const fetchBugbusterResponse = async (issue) => {
  
 export const fetchUVRulesResponse = async (query) => {
   try {
-    const response = await fetch("https://root-cause-identification.onrender.com/rulehelp", {
+    const response = await fetch("http://localhost:8000/rulehelp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
